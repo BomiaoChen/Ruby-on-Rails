@@ -3,3 +3,6 @@ The Ruby on Rails Tutorial standardizes on the excellent cloud development envir
 Three essential components needed to develop web applications: a text editor, a filesystem navigator, and a command-line terminal.
 
 As a general rule, you should refresh the file tree any time files or directories don’t appear as expected.
+
+Rails enforces a separation between the data in the application (such as user information) and the code used to display it, 
+which is a common way of structuring a graphical user interface (GUI). Follows the model-view-controller (MVC) architectural pattern

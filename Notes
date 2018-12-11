@@ -1,0 +1,5 @@
+The Ruby on Rails Tutorial standardizes on the excellent cloud development environment Cloud9, part of Amazon Web Services (AWS).
+ 
+Three essential components needed to develop web applications: a text editor, a filesystem navigator, and a command-line terminal.
+
+As a general rule, you should refresh the file tree any time files or directories don’t appear as expected.

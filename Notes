@@ -59,3 +59,6 @@ but this is error-prone and requires significant expertise.
 heroku
 $ heroku login
 $ git push heroku master
+
+The typical first step when making a web application is to create a data model, 
+which is a representation of the structures needed by our application.

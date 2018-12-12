@@ -30,6 +30,9 @@ $ git checkout -b modify-README
 $ git branch
 git branch, just lists all the local branches
 
+Create a new topic branch
+$ git checkout -b static-pages
+
 Commit
 $ git commit -a -m "Improve the README file"
 

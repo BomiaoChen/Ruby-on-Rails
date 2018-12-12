@@ -89,3 +89,9 @@ Undoing migration
 $ rails db:migrate
 $ rails db:rollback
 $ rails db:migrate VERSION=0
+
+Red Green Refactor eg.
+We’ll be using the full “Red, Green, Refactor” cycle: 
+first by adding simple tests for our page titles (red), 
+then by adding titles to each of our three pages (green), 
+and finally using a layout file to eliminate duplication (Refactor).

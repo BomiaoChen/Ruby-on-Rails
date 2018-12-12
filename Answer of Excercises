@@ -36,12 +36,12 @@ Reason: (Different Directory)
 
 2.2.2
 1. NEED TO BE DEFINED
-The browser issues a request for the /users/1/edit URL.
+The browser issues a request (GET) for the /users/1/edit URL.
 Rails routes /users/1 to the index action in the Users controller.
 The index action asks the User model to edit user 1.
 The User model pulls user 1 from the database.
 The User model returns user 1 to the controller.
-The controller captures the user from browser in the @users variable, which is passed to the index 1.
+The controller captures the user 1 in the @users variable, which is passed to the index view.
 The view uses embedded Ruby to render the page as HTML.
 The controller passes the HTML back to the browser.
 2.

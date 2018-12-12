@@ -87,3 +87,10 @@ Content can't be blank
 3.
 Name can't be blank
 Email can't be blank
+
+2.3.4
+1. class ApplicationController < ActionController::Base
+2. 
+class ApplicationRecord < ActiveRecord::Base
+  self.abstract_class = true
+end

@@ -28,3 +28,8 @@ Reason: (Different Directory)
 1. logs            display recent log output
 2.2018-12-11T09:26:26.401030+00:00 app[web.1]: I, [2018-12-11T09:26:26.400963 #4]  INFO -- : 
 [774b8b69-e3a1-4908-97ee-b9dd7988654b] Completed 200 OK in 9ms (Views: 7.9ms)
+
+2.2.1
+2. User was successfully created.
+3. User was successfully created.
+4. There is a window showing are you sure?

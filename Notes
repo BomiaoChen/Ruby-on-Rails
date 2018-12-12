@@ -99,3 +99,12 @@ and finally using a layout file to eliminate duplication (Refactor).
 $ rails test
 $ git push heroku
 Test before push, which is a good habit.
+
+.empty?
+
+>> "fooxbarxbaz".split('x')
+=> ["foo", "bar", "baz"]
+
+a.sort! Use ! to change a
+
+a[0..2] .. => range

@@ -119,7 +119,7 @@ remove  app/controllers/foo_controller.rb
 1. 3 runs, 6 assertions, 0 failures, 0 errors, 0 skips
 
 3.4.4
-1.
+1. (It is Green but not right, see next exercise for details)
 test "should get root" do
   get static_pages_home_url
   assert_response :success

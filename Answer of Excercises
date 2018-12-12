@@ -69,3 +69,21 @@ because any design choice will be surprising to someone, he uses a personal stan
 If that personal standard remains consistent, there would be few surprises for those familiar with the standard.
 User:
 4.
+
+2.3.2
+1. 1 error prohibited this micropost from being saved:
+    Content is too long (maximum is 140 characters)
+2. error_explanation
+
+2.3.3
+1.
+<p>
+  <strong>Micropost:</strong>
+  <%= @user.microposts.first.content %>
+</p>
+2.
+User must exist
+Content can't be blank
+3.
+Name can't be blank
+Email can't be blank

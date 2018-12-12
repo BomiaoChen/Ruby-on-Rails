@@ -33,3 +33,39 @@ Reason: (Different Directory)
 2. User was successfully created.
 3. User was successfully created.
 4. There is a window showing are you sure?
+
+2.2.2
+1. NEED TO BE DEFINED
+The browser issues a request for the /users/1/edit URL.
+Rails routes /users/1 to the index action in the Users controller.
+The index action asks the User model to edit user 1.
+The User model pulls user 1 from the database.
+The User model returns user 1 to the controller.
+The controller captures the user from browser in the @users variable, which is passed to the index 1.
+The view uses embedded Ruby to render the page as HTML.
+The controller passes the HTML back to the browser.
+2.
+  def set_user
+    @user = User.find(params[:id])
+  end
+3. edit.html.erb
+
+2.3.1
+2.
+Micropost was successfully created.
+Content:
+User:
+3.
+Micropost was successfully created.
+Content: Ruby is said to follow the principle of least astonishment (POLA), 
+meaning that the language should behave in such a way as to minimize confusion for experienced users. 
+Matsumoto has said his primary design goal was to make a language that he himself enjoyed using, 
+by minimizing programmer work and possible confusion. He has said that he had not applied the principle 
+of least astonishment to the design of Ruby,[83] but nevertheless the phrase has come to be closely associated 
+with the Ruby programming language. The phrase has itself been a source of surprise, as novice users may take 
+it to mean that Ruby's behaviors try to closely match behaviors familiar from other languages. In a May 2005 
+discussion on the newsgroup comp.lang.ruby, Matsumoto attempted to distance Ruby from POLA, explaining that 
+because any design choice will be surprising to someone, he uses a personal standard in evaluating surprise. 
+If that personal standard remains consistent, there would be few surprises for those familiar with the standard.
+User:
+4.

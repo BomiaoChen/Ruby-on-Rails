@@ -94,3 +94,8 @@ Email can't be blank
 class ApplicationRecord < ActiveRecord::Base
   self.abstract_class = true
 end
+
+2.3.5
+1.
+2.
+3. It works

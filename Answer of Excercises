@@ -105,3 +105,12 @@ end
 1. Working!
 2. Succeeded!
 
+3.2.1
+1.
+create  app/controllers/foo_controller.rb
+ route  get 'foo/bar'
+ route  get 'foo/foo'
+2.
+remove  app/controllers/foo_controller.rb
+ route  get 'foo/bar'
+ route  get 'foo/foo'

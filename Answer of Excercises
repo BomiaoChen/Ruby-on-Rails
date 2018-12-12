@@ -129,3 +129,48 @@ test "should get root" do
   get root_url
   assert_response :success
 end
+
+
+4.2.2
+1. city = "New York"  state = "NY"
+2. puts "#{city}" + ", " + "#{state}"
+3. puts "#{city}" + "\t" + "#{state}"
+4. puts '#{city}' + '\t' + '#{state}'
+#{city}\t#{state}
+
+4.2.3
+1. 7
+2. "racecar".reverse
+ => "racecar"
+3. s == s.reverse
+ => true 
+4. puts "It's a palindrome!" if s == s.reverse              
+It's a palindrome!
+ => nil
+   s = "onomatopoeia"
+   puts "It's a palindrome!" if s == s.reverse
+ => nil 
+ 
+ 4.2.4
+ 1. if s == s.reverse
+ 2. puts palindrome_tester("racecar")
+It's a palindrome!
+    puts palindrome_tester("onomatopoeia")
+It's not a palindrome.
+3. palindrome_tester("onomatopoeia").nil?
+It's not a palindrome.
+ => true
+ 
+4.3.1
+1. > a = "A man, a plan, a canal, Panama".split(",")
+=> ["A man", " a plan", " a canal", " Panama"] 
+2. > s = a.join
+=> "A man a plan a canal Panama" 
+3. > palindrome_tester(s)
+It's a palindrome!
+   > palindrome_tester(s.downcase)
+It's a palindrome!
+4. > a[7]
+ => "h" 
+   > a.reverse[7]
+ => "s"

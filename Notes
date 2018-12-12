@@ -79,3 +79,13 @@ The User model returns the list of users to the controller.
 The controller captures the users in the @users variable, which is passed to the index view.
 The view uses embedded Ruby to render the page as HTML.
 The controller passes the HTML back to the browser.3
+
+2018/12/12
+Undoing generation
+$ rails generate controller StaticPages home help
+$ rails destroy  controller StaticPages home help
+
+Undoing migration
+$ rails db:migrate
+$ rails db:rollback
+$ rails db:migrate VERSION=0

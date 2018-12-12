@@ -57,6 +57,8 @@ It is possible, of course, to arrange for this information to be handled securel
 but this is error-prone and requires significant expertise.
 
 heroku
+$ source <(curl -sL https://cdn.learnenough.com/heroku_install)
+If heroku not recognize, run above in Cloud9 terminal
 $ heroku login
 $ git push heroku master
 

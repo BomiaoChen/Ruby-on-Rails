@@ -114,3 +114,6 @@ create  app/controllers/foo_controller.rb
 remove  app/controllers/foo_controller.rb
  route  get 'foo/bar'
  route  get 'foo/foo'
+
+3.4.2
+1. 3 runs, 6 assertions, 0 failures, 0 errors, 0 skips

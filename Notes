@@ -95,3 +95,7 @@ We’ll be using the full “Red, Green, Refactor” cycle:
 first by adding simple tests for our page titles (red), 
 then by adding titles to each of our three pages (green), 
 and finally using a layout file to eliminate duplication (Refactor).
+
+$ rails test
+$ git push heroku
+Test before push, which is a good habit.

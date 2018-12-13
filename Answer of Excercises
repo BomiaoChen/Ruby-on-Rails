@@ -188,3 +188,59 @@ def random_subdomain
   return ('a'..'z').to_a.shuffle[0..7].join
 end
 4. s.split('').shuffle.join
+
+4.3.3
+1. number = { one: "uno", two: "dos", three: "tres"}
+   number.each do |key, value|
+2.
+> person1 = { first: "1", last: "2"}
+ => {:first=>"1", :last=>"2"} 
+> person2 = { first: "3", last: "4"}                      
+ => {:first=>"3", :last=>"4"} 
+> person3 = { first: "5", last: "6"}                      
+ => {:first=>"5", :last=>"6"} 
+> params = { father: person1, mother: person2, child: person3}
+ => {:father=>{:first=>"1", :last=>"2"}, :mother=>{:first=>"3", :last=>"4"}, :child=>{:first=>"5", :last=>"6"}} 
+> params[:father][:first]
+ => "1"
+3. > keys
+ => {:name=>"Bomiao Chen", :email=>"bc2346@nyu.edu", "password digest"=>"smdlnbjkgcwtfreq"} 
+4.
+h1 = { "a" => 100, "b" => 200 }
+h2 = { "b" => 254, "c" => 300 }
+h1.merge(h2)   #=> {"a"=>100, "b"=>254, "c"=>300}
+h1.merge(h2){|key, oldval, newval| newval - oldval}
+               #=> {"a"=>100, "b"=>54,  "c"=>300}
+h1             #=> {"a"=>100, "b"=>200}
+
+4.4.1
+1. a = (1..10)
+ => 1..10 
+ > a.class
+ => Range 
+2. > a = Range.new(1,10)
+ => 1..10 
+3. > (1..10) == Range.new(1,10)
+ => true 
+ 
+4.4.2
+1. Object
+2. Works
+
+4.4.3
+1. > "malayalam".palindrome?
+ => true 
+2. self.split('').shuffle.join
+3. Works
+
+4.4.4
+1. user = User.new
+ => #<User id: nil, name: nil, email: nil, created_at: nil, updated_at: nil> 
+2. > user.class
+ => User(id: integer, name: string, email: string, created_at: datetime, updated_at: datetime) 
+   > user.class.superclass
+ => ApplicationRecord(abstract) 
+   > user.class.superclass.superclass
+ => ActiveRecord::Base 
+   > user.class.superclass.superclass.superclass
+ => Object 

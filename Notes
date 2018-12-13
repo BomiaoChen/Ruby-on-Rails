@@ -108,3 +108,5 @@ Test before push, which is a good habit.
 a.sort! Use ! to change a
 
 a[0..2] .. => range
+
+@name and @email are both instance variables

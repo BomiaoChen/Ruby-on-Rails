@@ -244,3 +244,13 @@ h1             #=> {"a"=>100, "b"=>200}
  => ActiveRecord::Base 
    > user.class.superclass.superclass.superclass
  => Object 
+
+4.4.5
+1. def full_name
+     "#{@first} #{@last}"
+   end
+2. def alphabetical_name
+     "#{@last},#{@first}"
+   end
+3. user.full_name.split == user.alphabetical_name.split(',').reverse
+ => true 

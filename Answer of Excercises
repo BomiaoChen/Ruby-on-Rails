@@ -174,3 +174,17 @@ It's a palindrome!
  => "h" 
    > a.reverse[7]
  => "s"
+
+4.3.2
+1.  > (0..16).map { |i| 2**i }
+ => [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536]
+2.
+def yeller(str)
+  tmp = str.map(&:upcase)
+  return tmp.join
+end
+3. 
+def random_subdomain
+  return ('a'..'z').to_a.shuffle[0..7].join
+end
+4. s.split('').shuffle.join

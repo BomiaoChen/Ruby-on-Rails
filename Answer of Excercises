@@ -353,3 +353,7 @@ Update attributes
 7.1.1
 1. action: about
 2. Same
+
+7.1.2
+1. <%= @user.created_at %>, <%= @user.updated_at %>
+2. <%= Time.now %> Time changes every time.

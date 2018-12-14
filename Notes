@@ -114,3 +114,7 @@ Three main features about the asset pipeline: asset directories, manifest files,
 
 check using the errors object generated on failure
 >> user.errors.full_messages
+
+Making strings into Array
+>> %w[foo bar baz]
+=> ["foo", "bar", "baz"]

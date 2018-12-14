@@ -38,6 +38,8 @@ Reason: (Different Directory)
 1. NEED TO BE DEFINED
 The browser issues a request (GET) for the /users/1/edit URL.
 Rails routes /users/1 to the index action in the Users controller.
+
+
 The index action asks the User model to edit user 1.
 The User model pulls user 1 from the database.
 The User model returns user 1 to the controller.
@@ -260,4 +262,8 @@ h1             #=> {"a"=>100, "b"=>200}
 3. <%= link_to image_tag("kitten.jpg", alt:"Cat logo") %>
 
 5.1.2
+Done
+
+5.3.2
+1. as: 'help' works.
 Done

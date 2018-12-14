@@ -110,3 +110,4 @@ a.sort! Use ! to change a
 a[0..2] .. => range
 
 @name and @email are both instance variables
+Three main features about the asset pipeline: asset directories, manifest files, and preprocessor engines.

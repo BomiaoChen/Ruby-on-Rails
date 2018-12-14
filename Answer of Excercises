@@ -363,3 +363,10 @@ Update attributes
 nil
 2. (byebug) @user
 nil
+
+7.1.4
+1.  => "9e617fc2eec8c7f9cbbd0be22abc2c66" 
+
+7.2.1
+1. undefined method `nome' for #<User:0x007fef1dea76a8>
+2. ???

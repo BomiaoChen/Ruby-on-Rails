@@ -118,3 +118,5 @@ check using the errors object generated on failure
 Making strings into Array
 >> %w[foo bar baz]
 => ["foo", "bar", "baz"]
+
+Using debugger to check

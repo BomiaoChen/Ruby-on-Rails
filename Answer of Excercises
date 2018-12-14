@@ -323,3 +323,9 @@ Update attributes
  => true 
 2. > user.valid?
 => true 
+
+6.2.2
+1. > u.errors.full_messages
+ => ["Name can't be blank", "Email can't be blank"] 
+2. > u.errors.full_messages[1]
+ => "Email can't be blank"

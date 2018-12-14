@@ -357,3 +357,11 @@ Update attributes
 7.1.2
 1. <%= @user.created_at %>, <%= @user.updated_at %>
 2. <%= Time.now %> Time changes every time.
+
+7.1.3
+1. Same
+(byebug) puts params
+{"controller"=>"users", "action"=>"show", "id"=>"1"}
+nil
+2. (byebug) @user
+nil

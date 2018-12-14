@@ -267,3 +267,6 @@ Done
 5.3.2
 1. as: 'help' works.
 Done
+
+5.3.3
+1. <li><%= link_to "Help",   helf_path %></li>

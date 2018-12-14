@@ -317,3 +317,9 @@ Update attributes
 2. user.update_attributes(email: "bc2346@nyu.edu")
 3. user.created_at = 1.year.ago
  => Thu, 14 Dec 2017 08:56:50 UTC +00:00 
+
+6.2.1
+1. > User.new.valid?
+ => true 
+2. > user.valid?
+=> true 

@@ -340,3 +340,7 @@ Update attributes
 6.3.2
 2. > u.errors.full_messages
  => ["Password can't be blank"] 
+
+6.3.3
+2. > u.errors.full_messages
+ => ["Password can't be blank", "Password is too short (minimum is 6 characters)"] 

@@ -307,3 +307,13 @@ Use .class and .superclass
 3. > User.all.length
 User Load (0.1ms)  SELECT "users".* FROM "users"
 => 1 
+
+6.1.5
+Assignment
+1. user.name = "Richard Chen"
+ => "Richard Chen" 
+   > user.save
+Update attributes
+2. user.update_attributes(email: "bc2346@nyu.edu")
+3. user.created_at = 1.year.ago
+ => Thu, 14 Dec 2017 08:56:50 UTC +00:00 

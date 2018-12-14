@@ -329,3 +329,7 @@ Update attributes
  => ["Name can't be blank", "Email can't be blank"] 
 2. > u.errors.full_messages[1]
  => "Email can't be blank"
+
+6.2.3
+2. > u.errors.full_messages
+ => ["Name is too long (maximum is 50 characters)", "Email is too long (maximum is 255 characters)"] 

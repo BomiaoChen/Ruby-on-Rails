@@ -384,3 +384,11 @@ nil
 1. assert_select 'div#error_explanation'
    assert_select 'div.field_with_errors'
 4. assert_select 'form[action="/signup"]'
+
+7.4.2
+1. puts #{:success}
+ => nil 
+ 
+7.4.4
+1. assert_not flash.empty?
+4. ???

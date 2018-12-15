@@ -370,3 +370,9 @@ nil
 7.2.1
 1. undefined method `nome' for #<User:0x007fef1dea76a8>
 2. ???
+
+7.2.2
+1. No form
+
+7.3.2
+1. admin: '1'

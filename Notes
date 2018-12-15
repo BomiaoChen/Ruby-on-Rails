@@ -125,3 +125,6 @@ Using debugger to check
 => "1 error"
 
 Rails comes with three standard environments: development, test, and production.
+
+Rails can maintain state from one page to the next using temporary cookies via the session method.
+Using the session method, we can securely place a user id on the browser to create a temporary session.

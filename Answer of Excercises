@@ -392,3 +392,6 @@ nil
 7.4.4
 1. assert_not flash.empty?
 4. ???
+
+8.1.2
+1. method="post"

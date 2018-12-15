@@ -120,3 +120,6 @@ Making strings into Array
 => ["foo", "bar", "baz"]
 
 Using debugger to check
+
+> helper.pluralize(1, "error")
+=> "1 error"

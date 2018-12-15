@@ -409,3 +409,11 @@ HMrOVNZY3JVWElMNzQ2WmRFMlJRVCswZlloTFFLR2ZzW
 UtzQVRQTWhzPS0tM0lheGJZdmtNN2pXUVBMNlRWK1dqZ
 z09--4973e75c60222637975ad843a86d21740eea610d
 2. 1969-12-31T23:59:59.000Z
+
+8.2.2
+1. User.find_by(id: 3)
+  User Load (0.2ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?  [["id", 3], ["LIMIT", 1]]
+ => nil 
+
+8.2.4
+1. RED

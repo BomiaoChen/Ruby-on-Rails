@@ -417,3 +417,9 @@ z09--4973e75c60222637975ad843a86d21740eea610d
 
 8.2.4
 1. RED
+
+9.1.1
+1. > user.remember_token
+ => "RhNdAArYlcU-cBylKpPy6w" 
+   > user.remember_digest
+ => "$2a$10$s8gJs42Lp6IG5tWMp5j3h.8C61hGHf.oMud6dq82hiWLUE1DIba6q"

@@ -123,3 +123,5 @@ Using debugger to check
 
 > helper.pluralize(1, "error")
 => "1 error"
+
+Rails comes with three standard environments: development, test, and production.

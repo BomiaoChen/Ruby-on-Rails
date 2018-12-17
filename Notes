@@ -130,3 +130,5 @@ Rails can maintain state from one page to the next using temporary cookies via t
 Using the session method, we can securely place a user id on the browser to create a temporary session.
 
 assert_equal <expected>, <actual>
+
+Rails knows to use a POST request for new users and a PATCH for editing users through Active Record’s new_record?

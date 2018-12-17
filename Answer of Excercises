@@ -438,3 +438,10 @@ z09--4973e75c60222637975ad843a86d21740eea610d
 10.2.2
 1. protect users data and also can not change data in database
 2. edit
+
+10.2.3
+1. assert_equal session[:forwarding_url], nil
+2. (byebug) session[:forwarding_url]
+"https://f726f9d72fd8419ca34a7dba07e1e243.vfs.cloud9.us-east-1.amazonaws.com/users/1/edit"
+   (byebug) request.get?
+true

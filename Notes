@@ -132,3 +132,5 @@ Using the session method, we can securely place a user id on the browser to crea
 assert_equal <expected>, <actual>
 
 Rails knows to use a POST request for new users and a PATCH for editing users through Active Record’s new_record?
+
+Before filters use the before_action command to arrange for a particular method to be called before the given actions.

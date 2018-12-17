@@ -428,6 +428,7 @@ z09--4973e75c60222637975ad843a86d21740eea610d
  1. <a rel="noopener" href="http://gravatar.com/emails" target="_blank">change</a>
  2. <% provide(:path, signup_path) %>
     <%= form_for(@user, url: yield(:path)) do |f| %>
+    Problem!!!!!! How to change the edit path
  
  10.1.3
  1. assert_select "div.alert", "The form contains 4 errors."

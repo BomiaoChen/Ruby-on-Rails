@@ -517,3 +517,6 @@ NoMethodError: private method `create_activation_digest' called f
 1. update_columns(activated: true, activated_at: Time.zone.now)
 
 9.3.3.1 will cause problems throught remember_tokens.
+
+11.4
+2. UPDATE "users" SET "activated" = 't', "activated_at" = '2018-12-18 18:58:14.131854' WHERE "users"."id" = $1  [["id", 101]]

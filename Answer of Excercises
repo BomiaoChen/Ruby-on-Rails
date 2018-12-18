@@ -512,3 +512,8 @@ NoMethodError: private method `create_activation_digest' called f
 2. > user.activated?
  => true 
  => nil 
+ 
+11.3.3
+1. update_columns(activated: true, activated_at: Time.zone.now)
+
+9.3.3.1 will cause problems throught remember_tokens.

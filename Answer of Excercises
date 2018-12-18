@@ -485,3 +485,7 @@ NoMethodError: private method `create_activation_digest' called f
 3.  def downcase_email
       self.email.downcase!
     end
+
+11.2.1
+1. > a = CGI.escape("Don't panic!")                      
+ => "Don%27t+panic%21"

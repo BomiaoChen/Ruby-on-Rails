@@ -456,3 +456,10 @@ true
      assert_select "a[href=?]", logout_path
      assert_select "a[href=?]", users_path
    end
+   
+ 10.3.2
+ 1.
+ 2. > users.class
+ => User::ActiveRecord_Relation 
+    > users.class
+ => User::ActiveRecord_Relation 

@@ -507,3 +507,8 @@ NoMethodError: private method `create_activation_digest' called f
 ["activation_digest", "$2a$10$nuvxW.MI8fmvT48hEqZY0..AXnAf5otyAIRVDQjpGtHepsoSipyuW"]]
 2. > user.authenticated?(:remember, "$2a$10$BO3aF0y4KQj1bd9AgFDkf.nz7Ql00zNUZ6kDpec98aXkh9tsjTDL2")
  => false 
+11.3.2
+1. > user.activation_token
+2. > user.activated?
+ => true 
+ => nil 

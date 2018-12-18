@@ -497,3 +497,13 @@ NoMethodError: private method `create_activation_digest' called f
 1. "authenticity_token"=>"S4kYktWD9j101XQtN/zp9f/aVwGRaros9H7gmhc7EIfn5+hWaXH5pST51C60lbeXhZn8j9HBEw6HbwAlynUyBg=="
 2. > user.activated
  => false 
+ 
+11.3.1
+1. > user.remember_token
+ => "z-jv4zUQPa3P131PkMzn1g" 
+   > user.activation_token
+ => "3oWHOns6uDCoWkfx9H_NnQ" 
+["remember_digest", "$2a$10$BO3aF0y4KQj1bd9AgFDkf.nz7Ql00zNUZ6kDpec98aXkh9tsjTDL2"], 
+["activation_digest", "$2a$10$nuvxW.MI8fmvT48hEqZY0..AXnAf5otyAIRVDQjpGtHepsoSipyuW"]]
+2. > user.authenticated?(:remember, "$2a$10$BO3aF0y4KQj1bd9AgFDkf.nz7Ql00zNUZ6kDpec98aXkh9tsjTDL2")
+ => false 

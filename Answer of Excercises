@@ -476,3 +476,12 @@ true
 
 10.4.2
 1.  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 99]]
+
+11.1.2
+2. > user.create_activation_digest
+NoMethodError: private method `create_activation_digest' called f
+   > user.activation_digest
+ => "$2a$10$nmyqxYpUDPjajx/AHJ2NwuI1ZEiM.ttcuSeqLWlb0lMt0v/OkMZkO" 
+3.  def downcase_email
+      self.email.downcase!
+    end

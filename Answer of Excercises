@@ -492,3 +492,8 @@ NoMethodError: private method `create_activation_digest' called f
 
 11.2.2
 1. Tue, 18 Dec 2018 15:10:14 +0000
+
+11.2.4
+1. "authenticity_token"=>"S4kYktWD9j101XQtN/zp9f/aVwGRaros9H7gmhc7EIfn5+hWaXH5pST51C60lbeXhZn8j9HBEw6HbwAlynUyBg=="
+2. > user.activated
+ => false 

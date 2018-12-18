@@ -466,3 +466,10 @@ true
 
 10.3.3
 2. assert_select 'div.pagination', count: 2
+
+10.4.1
+1.  patch user_path(@other_user), params: {
+                                    user: { password:              'password',
+                                            password_confirmation: 'password',
+                                            admin: true } }
+    assert_not @other_user.admin?

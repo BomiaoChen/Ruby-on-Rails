@@ -489,3 +489,6 @@ NoMethodError: private method `create_activation_digest' called f
 11.2.1
 1. > a = CGI.escape("Don't panic!")                      
  => "Don%27t+panic%21"
+
+11.2.2
+1. Tue, 18 Dec 2018 15:10:14 +0000

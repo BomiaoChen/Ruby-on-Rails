@@ -473,3 +473,6 @@ true
                                             password_confirmation: 'password',
                                             admin: true } }
     assert_not @other_user.admin?
+
+10.4.2
+1.  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 99]]

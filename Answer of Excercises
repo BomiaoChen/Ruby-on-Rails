@@ -463,3 +463,6 @@ true
  => User::ActiveRecord_Relation 
     > users.class
  => User::ActiveRecord_Relation 
+
+10.3.3
+2. assert_select 'div.pagination', count: 2

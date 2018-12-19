@@ -527,3 +527,10 @@ NoMethodError: private method `create_activation_digest' called f
 12.1.3
 1. ArgumentError in PasswordResetsController#create
 2. [["updated_at", "2018-12-19 14:58:44.467686"], ["reset_sent_at", "2018-12-19 14:58:44.466961"], ["id", 101]]
+
+12.2.1
+1. Date: Wed, 19 Dec 2018 15:26:58 +0000
+3. > user.reset_digest
+ => "$2a$10$gyYcasn3KDjc2syz2sl6duGtoxFlJyIJsrNJzi5enJtKz1mAcaJO2" 
+   > user.reset_sent_at
+ => Wed, 19 Dec 2018 15:27:42 UTC +00:00 

@@ -534,3 +534,7 @@ NoMethodError: private method `create_activation_digest' called f
  => "$2a$10$gyYcasn3KDjc2syz2sl6duGtoxFlJyIJsrNJzi5enJtKz1mAcaJO2" 
    > user.reset_sent_at
  => Wed, 19 Dec 2018 15:27:42 UTC +00:00 
+
+12.3.1
+2. Unknown action
+The action 'update' could not be found for PasswordResetsController

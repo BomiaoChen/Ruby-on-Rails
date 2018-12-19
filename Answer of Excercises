@@ -538,3 +538,8 @@ NoMethodError: private method `create_activation_digest' called f
 12.3.1
 2. Unknown action
 The action 'update' could not be found for PasswordResetsController
+
+12.3.3
+1. update_columns(reset_digest:  User.digest(reset_token), reset_sent_at: Time.zone.now)
+2. assert_match /expired./i, response.body
+4. assert_nil user.reload.reset_digest

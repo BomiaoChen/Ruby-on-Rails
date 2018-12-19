@@ -520,3 +520,6 @@ NoMethodError: private method `create_activation_digest' called f
 
 11.4
 2. UPDATE "users" SET "activated" = 't', "activated_at" = '2018-12-18 18:58:14.131854' WHERE "users"."id" = $1  [["id", 101]]
+
+12.1.2
+1. we have no Session model, and hence no analogue for the @user variable

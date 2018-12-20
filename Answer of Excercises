@@ -543,3 +543,8 @@ The action 'update' could not be found for PasswordResetsController
 1. update_columns(reset_digest:  User.digest(reset_token), reset_sent_at: Time.zone.now)
 2. assert_match /expired./i, response.body
 4. assert_nil user.reload.reset_digest
+
+13.1.1
+1. nil
+2. First user information, user.first.name
+3. ["created_at", "2018-12-20 01:52:43.329156"], ["updated_at", "2018-12-20 01:52:43.329156"]

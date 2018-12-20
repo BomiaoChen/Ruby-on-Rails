@@ -548,3 +548,7 @@ The action 'update' could not be found for PasswordResetsController
 1. nil
 2. First user information, user.first.name
 3. ["created_at", "2018-12-20 01:52:43.329156"], ["updated_at", "2018-12-20 01:52:43.329156"]
+
+13.1.2
+1. ["User must exist", "User can't be blank", "Content can't be blank"]
+2. ["User must exist", "User can't be blank", "Content is too long (maximum is 140 characters)"] 

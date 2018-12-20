@@ -552,3 +552,8 @@ The action 'update' could not be found for PasswordResetsController
 13.1.2
 1. ["User must exist", "User can't be blank", "Content can't be blank"]
 2. ["User must exist", "User can't be blank", "Content is too long (maximum is 140 characters)"] 
+
+13.1.3
+1. SAVEPOINT active_record_1, RELEASE SAVEPOINT active_record_1
+2. ArgumentError: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`.
+3. true, true

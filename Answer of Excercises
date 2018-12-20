@@ -577,3 +577,5 @@ The action 'update' could not be found for PasswordResetsController
 13.3.1 
 1. Code repetition and will have two same name function.
 
+13.3.4
+1. DELETE FROM "microposts" WHERE "microposts"."id" = ?  [["id", 302]]

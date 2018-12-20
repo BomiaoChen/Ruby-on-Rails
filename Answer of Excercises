@@ -568,3 +568,8 @@ The action 'update' could not be found for PasswordResetsController
 3. micropost = user.microposts.paginate(page: nil) 
   > micropost.class
  => Micropost::ActiveRecord_AssociationRelation 
+
+13.2.3
+1. <%#= gravatar_for @user %>
+   <%#= @user.name %>
+2. assert_select 'div.pagination', count: 1

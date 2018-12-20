@@ -584,3 +584,7 @@ The action 'update' could not be found for PasswordResetsController
 2.  assert_select 'input[type=file]'
     micropost = assigns(:micropost)
     assert micropost.picture?
+
+13.4.2
+1. Maximum file size is 5MB. Please choose a smaller file.
+2. Picture You are not allowed to upload "docx" files, allowed types: jpg, jpeg, gif, png

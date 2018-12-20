@@ -557,3 +557,14 @@ The action 'update' could not be found for PasswordResetsController
 1. SAVEPOINT active_record_1, RELEASE SAVEPOINT active_record_1
 2. ArgumentError: You are passing an instance of ActiveRecord::Base to `find`. Please pass the id of the object by calling `.id`.
 3. true, true
+
+13.1.4
+1. First is later than last
+2. Micropost Load (0.2ms)  SELECT  "microposts".* FROM "microposts" ORDER BY "microposts"."created_at" DESC LIMIT ?
+
+13.2.1
+1.  => "21 days"   => "6 months" 
+2.  => "about 1 year" 
+3. micropost = user.microposts.paginate(page: nil) 
+  > micropost.class
+ => Micropost::ActiveRecord_AssociationRelation 

@@ -592,3 +592,35 @@ The action 'update' could not be found for PasswordResetsController
 14.1.1
 1. 2 7 10 8
 2. 1
+
+14.1.4
+2.4.1 :003 > user1.follow(user2)
+   (0.1ms)  SAVEPOINT active_record_1
+  User Load (0.1ms)  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+  SQL (2.6ms)  INSERT INTO "relationships" ("follower_id", "followed_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  
+  [["follower_id", 1], ["followed_id", 2], ["created_at", "2018-12-21 00:06:05.959880"], ["updated_at", "2018-12-21 00:06:05.959880"]]
+   (0.1ms)  RELEASE SAVEPOINT active_record_1
+  User Load (0.1ms)  SELECT  "users".* FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" WHERE 
+  "relationships"."follower_id" = ? LIMIT ?  [["follower_id", 1], ["LIMIT", 11]]
+ => #<ActiveRecord::Associations::CollectionProxy [#<User id: 2, name: "Mrs. Fritz Christiansen", email: "example-1@railstutorial.org", 
+ created_at: "2018-12-20 04:05:41", updated_at: "2018-12-20 04:05:41", 
+ password_digest: "$2a$10$vQiNqSFnWF1gE6v0P21HC.D69vLBTastCt4umPpWSP0...", remember_digest: nil, admin: false, 
+ activation_digest: "$2a$10$Za2bHOiMsTamDnm3hmp.ke.Lys12AUY/QJ8ZrRpYhXr...", activated: true, activated_at: "2018-12-20 04:05:41", 
+ reset_digest: nil, reset_sent_at: nil>]> 
+2.4.1 :004 > user1.following?(user2)
+  User Exists (0.2ms)  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" 
+  WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+ => true 
+2.4.1 :005 > user1.unfollow(user2)
+   (0.1ms)  SAVEPOINT active_record_1
+  SQL (0.2ms)  DELETE FROM "relationships" WHERE "relationships"."follower_id" = ? AND "relationships"."followed_id" = 2  
+  [["follower_id", 1]]
+   (0.0ms)  RELEASE SAVEPOINT active_record_1
+ => [#<User id: 2, name: "Mrs. Fritz Christiansen", email: "example-1@railstutorial.org", created_at: "2018-12-20 04:05:41", 
+ updated_at: "2018-12-20 04:05:41", password_digest: "$2a$10$vQiNqSFnWF1gE6v0P21HC.D69vLBTastCt4umPpWSP0...", 
+ remember_digest: nil, admin: false, activation_digest: "$2a$10$Za2bHOiMsTamDnm3hmp.ke.Lys12AUY/QJ8ZrRpYhXr...", 
+ activated: true, activated_at: "2018-12-20 04:05:41", reset_digest: nil, reset_sent_at: nil>] 
+2.4.1 :006 > user1.following?(user2)
+  User Exists (0.2ms)  SELECT  1 AS one FROM "users" INNER JOIN "relationships" ON "users"."id" = "relationships"."followed_id" 
+  WHERE "relationships"."follower_id" = ? AND "users"."id" = ? LIMIT ?  [["follower_id", 1], ["id", 2], ["LIMIT", 1]]
+ => false 

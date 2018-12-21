@@ -634,3 +634,8 @@ The action 'update' could not be found for PasswordResetsController
  => 3 
 3. > user.followers.to_a.count
  => 3 
+
+
+14.2.4
+2. Rendered users/_unfollow.html.erb (2.4ms)
+   Rendered users/_follow_form.html.erb (4.9ms)

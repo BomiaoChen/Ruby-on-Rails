@@ -639,3 +639,21 @@ The action 'update' could not be found for PasswordResetsController
 14.2.4
 2. Rendered users/_unfollow.html.erb (2.4ms)
    Rendered users/_follow_form.html.erb (4.9ms)
+
+14.2.5
+2. Rendered relationships/create.js.erb (6.0ms)
+   Rendering relationships/destroy.js.erb
+   
+14.2.6
+1. comment first standard way fail
+   comment both two fail
+2. comment first makes two fail
+
+14.3.1
+1. Posts from followed user
+2. Posts from self
+
+14.3.3
+1. assert_match CGI.escapeHTML(micropost.content), response.body
+2. I&#39;m sorry. Your words made sense, but your sarcastic tone did not.
+Expected /I'm\ sorry\.\ Your\ words\ made\ sense,\ but\ your\ sarcastic\ tone\ did\ not\.
